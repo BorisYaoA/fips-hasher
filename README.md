@@ -2,7 +2,7 @@
 
 A Rust-based CLI tool and microservice for secure file hashing and auditing. Designed to demonstrate hands-on experience with Rust, asynchronous programming, CLI UX, and secure coding practices (FIPS-compliant primitives).
 
-## ✨ Features
+## Features
 
 -  **Hash Files/Directories** using FIPS-compliant SHA-256
 -  **Optional HMAC** support with secret key
@@ -13,7 +13,7 @@ A Rust-based CLI tool and microservice for secure file hashing and auditing. Des
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/yourname/fips-hasher.git

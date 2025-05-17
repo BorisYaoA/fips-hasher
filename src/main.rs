@@ -11,7 +11,7 @@ mod exclude;
 
 #[derive(Parser)]
 #[command(name = "fips-hasher")]
-#[command(about = "A FIPS-like file hashing tool written in Rust")]
+#[command(about = "A FIPS-like file hashing tool")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,

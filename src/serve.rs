@@ -1,4 +1,5 @@
-use axum::{Router, routing::get};
+use axum::{routing::get, Router};
+use hyper::Server;
 use std::net::SocketAddr;
 
 pub async fn run_server(addr: String) -> anyhow::Result<()> {
@@ -6,6 +7,6 @@ pub async fn run_server(addr: String) -> anyhow::Result<()> {
     let app = Router::new().route("/", get(root));
 
     let addr: SocketAddr = addr.parse()?;
-    axum::Server::bind(&addr).serve(app.into_make_service()).await?;
+    Server::bind(&addr).serve(app.into_make_service()).await?;
     Ok(())
 }

@@ -29,6 +29,7 @@ What it does:
 git clone https://github.com/yourname/fips-hasher.git
 cd fips-hasher
 cargo build --release
+```
 
 ##Testing
 

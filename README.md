@@ -41,7 +41,6 @@ Run the hash command on this directory:
 cargo run -- hash --path ./test_data
 
 You should see SHA256 hashes printed for all files including .log.
-Manually verify hashes if you want (e.g., use sha256sum command on files).
 ```
 
 2. Test report generation
